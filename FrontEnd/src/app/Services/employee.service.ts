@@ -8,7 +8,7 @@ import { EmployeeDTO } from '../Models/employeeDTO.model';
   providedIn: 'root'
 })
 export class EmployeeService {
-  private apiUrl = 'https://localhost:7141/api/Employees';
+  private apiUrl = 'YourApiUrlHere';
 
   constructor(private http: HttpClient) { }
 
