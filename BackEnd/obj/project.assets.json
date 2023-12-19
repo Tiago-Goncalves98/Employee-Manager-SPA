@@ -8996,11 +8996,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\istoe\\Desktop\\Projects\\EmpManager\\BackEnd\\BackEnd.csproj",
+      "projectUniqueName": "C:\\Users\\istoe\\Desktop\\Projects\\EmpManager\\Employee-Manager-SPA\\BackEnd\\BackEnd.csproj",
       "projectName": "BackEnd",
-      "projectPath": "C:\\Users\\istoe\\Desktop\\Projects\\EmpManager\\BackEnd\\BackEnd.csproj",
+      "projectPath": "C:\\Users\\istoe\\Desktop\\Projects\\EmpManager\\Employee-Manager-SPA\\BackEnd\\BackEnd.csproj",
       "packagesPath": "C:\\Users\\istoe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\istoe\\Desktop\\Projects\\EmpManager\\BackEnd\\obj\\",
+      "outputPath": "C:\\Users\\istoe\\Desktop\\Projects\\EmpManager\\Employee-Manager-SPA\\BackEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\istoe\\AppData\\Roaming\\NuGet\\NuGet.Config",

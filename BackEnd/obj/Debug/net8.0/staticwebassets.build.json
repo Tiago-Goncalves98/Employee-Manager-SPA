@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tHVolGT46Gau+5oL9IJOGQUf1JGEm+dmxM6TMMlBplg=",
+  "Hash": "jMq7Oc9l7M6pZBczQ5hxj0rJxYNyhhfJDVmV5UgSQaA=",
   "Source": "BackEnd",
   "BasePath": "_content/BackEnd",
   "Mode": "Default",
@@ -47,10 +47,10 @@
       "OriginalItemSpec": "C:\\Users\\istoe\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\QuickGrid.razor.js"
     },
     {
-      "Identity": "C:\\Users\\istoe\\Desktop\\Projects\\EmpManager\\BackEnd\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BackEnd.styles.css",
+      "Identity": "C:\\Users\\istoe\\Desktop\\Projects\\EmpManager\\Employee-Manager-SPA\\BackEnd\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BackEnd.styles.css",
       "SourceId": "BackEnd",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\istoe\\Desktop\\Projects\\EmpManager\\BackEnd\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\istoe\\Desktop\\Projects\\EmpManager\\Employee-Manager-SPA\\BackEnd\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/BackEnd",
       "RelativePath": "BackEnd.styles.css",
       "AssetKind": "All",
@@ -63,7 +63,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\istoe\\Desktop\\Projects\\EmpManager\\BackEnd\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BackEnd.styles.css"
+      "OriginalItemSpec": "C:\\Users\\istoe\\Desktop\\Projects\\EmpManager\\Employee-Manager-SPA\\BackEnd\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BackEnd.styles.css"
     }
   ]
 }
