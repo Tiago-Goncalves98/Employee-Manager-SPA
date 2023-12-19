@@ -1,0 +1,41 @@
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <h2>Employee Details </h2>
+    <div style="display: flex; flex-direction: row; gap: 20px;">
+        <form (submit)="fetchEmployee()" novalidate>
+            <mat-form-field>
+                <mat-label>Employee ID:</mat-label>
+                <input matInput type="text" id="id" [(ngModel)]="inputEmployeeId" name="inputEmployeeId" required (keypress)="validateNumberInput($event)">
+            </mat-form-field>
+            <div>
+                <button type="submit" mat-raised-button color="primary" style="margin: 20px;"
+                    [disabled]="!inputEmployeeId">Fetch
+                    Employee</button>
+            </div>
+        </form>
+    </div>
+    <p></p>
+    <div *ngIf="employee" style="display: flex;flex-direction: row; gap: 15px;">
+        <div>
+            <app-picture [employeeId]="employeeId"></app-picture>
+        </div>
+        <div>
+            <label for="id">Employee ID - </label>
+            <span id="id">{{employee.employeeID}}</span>
+            <p></p>
+            <label for="Name">Full Name - </label>
+            <span id="Name">{{employee.firstName}} {{employee.lastName}}</span>
+            <p></p>
+            <label for="position">Position - </label>
+            <span id="position">{{employee.position}}</span>
+            <p></p>
+            <label for="department">Department - </label>
+            <span id="department">{{employee.department}}</span>
+            <p></p>
+            <label for="nunber">Contact Number - </label>
+            <span id="number">{{employee.contactNumber}}</span>
+            <p></p>
+            <label for="email">Email - </label>
+            <span id="email">{{employee.email}}</span>
+        </div>
+    </div>
+</div>

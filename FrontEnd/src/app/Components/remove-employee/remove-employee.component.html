@@ -1,0 +1,17 @@
+
+<div style="display: flex;flex-direction: column;position: relative;align-items: center;">
+  <div>
+    <h2>Remove Employee</h2>
+  </div>
+  <div>
+    <form (submit)="removeEmployee()" novalidate>
+      <mat-form-field>
+        <mat-label>Employee ID:</mat-label>
+        <input matInput type="text" id="id" [(ngModel)]="employeeId" name="employeeId" required (keypress)="validateNumberInput($event)">
+      </mat-form-field>
+      <div>
+        <button type="submit" [disabled]="!employeeId" mat-raised-button color="primary">Delete Employee</button>
+      </div>
+    </form>
+  </div>
+</div>>

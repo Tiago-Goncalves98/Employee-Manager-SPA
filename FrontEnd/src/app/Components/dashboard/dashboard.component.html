@@ -1,0 +1,21 @@
+<!--
+<nav mat-tab-nav-bar [tabPanel]="tabPanel">
+  <a routerLink="/employees" routerLinkActive="active">Employee List </a>
+  <p></p>
+  <a routerLink="/employee/editor" routerLinkActive="active">Employee Editor</a>
+  <p></p>
+  <a routerLink="/details" routerLinkActive="active">Employee Details</a>
+  <p></p>
+  <a routerLink="/addEmployee" routerLinkActive="active">Add new employee</a>
+  <p></p>
+  <a routerLink="/removeEmployee" routerLinkActive="active">Remove employee</a>
+</nav>
+-->
+
+<mat-tab-group>
+  <mat-tab label="List"> <app-employee-list></app-employee-list> </mat-tab>
+  <mat-tab label="Details"> <app-emp-details></app-emp-details> </mat-tab>
+  <mat-tab label="New Employee"> <app-add-employee></app-add-employee> </mat-tab>
+  <mat-tab label="Remove Employee"> <app-remove-employee></app-remove-employee> </mat-tab>
+  <mat-tab label="Employee Editor"> <app-employee-editor></app-employee-editor> </mat-tab>
+</mat-tab-group>

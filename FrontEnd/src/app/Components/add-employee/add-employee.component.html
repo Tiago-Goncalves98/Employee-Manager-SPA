@@ -1,0 +1,54 @@
+<div style="display: flex;flex-direction: column;position: relative;align-items: center;">
+    <div style="align-content: center; height: 20%;">
+        <h2>Add new employee</h2>
+    </div>
+    <div style="height: 60%;display: flex;flex-direction: row;gap: 10px;">
+        <div>
+            <form #employeeForm="ngForm" (submit)="saveEmployee()"  novalidate>
+                <div>
+                    <mat-form-field style="padding: 5px;">
+                        <mat-label for="firstName">First Name:</mat-label>
+                        <input matInput type="text" [(ngModel)]="employee.firstName" id="firstName" name="firstName" required>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <mat-label for="lastName">Last Name:</mat-label>
+                        <input matInput type="text" [(ngModel)]="employee.lastName" id="lastName" name="lastName" required>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field style="padding: 5px;">
+                        <mat-label for="position">Position:</mat-label>
+                        <input matInput type="text" [(ngModel)]="employee.position" id="position" required name="position">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <mat-label for="department">Department:</mat-label>
+                        <input matInput type="text" [(ngModel)]="employee.department" id="department" required name="department">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field style="padding: 5px;">
+                        <mat-label for="contactNumber">Contact Number:</mat-label>
+                        <input matInput type="text" [(ngModel)]="employee.contactNumber" id="contactNumber" name="contactNumber"required (keypress)="validateNumberInput($event)">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <mat-label for="email">Email:</mat-label>
+                        <input matInput type="email" [(ngModel)]="employee.email" id="email" name="email"required autocomplete="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    </mat-form-field>
+                </div>
+                <div style="display: flex;flex-direction: row;justify-content: space-around;">
+                    <div>
+                        <button mat-raised-button color="primary" type="submit"
+                            [disabled]="employeeForm.invalid || !selectedPicture">Add Employee</button>
+                    </div>
+                    <div>
+                        <button mat-raised-button color="primary" type="button" (click)="addPicture()">Add
+                            Picture</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div *ngIf="selectedPicture">
+            <img [src]="selectedPicture" alt="No Picture Available" style="max-width: 200px;max-height: 200px;">
+        </div>
+    </div>
+</div>

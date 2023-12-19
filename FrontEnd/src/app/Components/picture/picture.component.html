@@ -1,0 +1,7 @@
+<!-- picture.component.html -->
+
+<div>
+    <img *ngIf="imageURL" [src]="imageURL" alt="Employee Image" style="max-width: 200px;max-height: 200px;">
+    <p *ngIf="!imageURL">Image not available</p>
+</div>
+  
