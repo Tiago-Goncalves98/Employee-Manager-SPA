@@ -9,7 +9,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowOrigin",
-        builder => builder.WithOrigins("http://localhost:4200") // Add your Angular app URL here
+        builder => builder.WithOrigins("FronEndUrlHere") //this is due to everything being local
                           .AllowAnyHeader()
                           .AllowAnyMethod());
 });
